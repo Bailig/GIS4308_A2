@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>AJAX simple example</title>
+    </head>
+    <body>
+        <button id="btn1">MyID1</button>
+        <button id="btn2">MyID2</button>
+        <div id="infoBox"></div>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $("#btn1").on("click",function(){
+                $("#infoBox").load("data/1.txt");
+            });
+            $("#btn2").on("click",function(){
+                $("#infoBox").load("data/2.txt");
+            });
+        </script>
+    </body>
+</html>
